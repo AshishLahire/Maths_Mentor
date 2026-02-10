@@ -1,0 +1,154 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Streamlit
+.streamlit/
+*.log
+st_session_state/
+
+# API Keys and Secrets
+.env
+.env.local
+.env.dev
+.env.prod
+.env.test
+secrets.toml
+*.key
+*.pem
+*.crt
+
+# OCR and Audio Temporary Files
+*.wav
+*.mp3
+*.m4a
+*.ogg
+*.webm
+*.tmp
+temp/
+tmp/
+*.temp
+*.cache
+
+# Database and Storage
+*.db
+*.sqlite
+*.sqlite3
+memory_data.json
+vector_store/
+embeddings/
+*.index
+*.faiss
+
+# IDE and Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Package Manager
+poetry.lock
+Pipfile.lock
+
+# Documentation
+docs/_build/
+
+# ML/AI Models (if any)
+models/
+*.h5
+*.pkl
+*.joblib
+*.pt
+*.pth
+
+# RAG Specific
+chroma_db/
+faiss_index/
+*.faiss
+*.index
+
+# Audio Processing Cache
+*.mp3
+*.wav
+*.m4a
+*.flac
+
+# Image Processing
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.gif
+
+# Project Specific
+test_*.py
+debug_*.py
+scratch_*.py
+
+# Performance
+profile/
+prof/
+*.prof
+
+# Custom (add your own)
+local_settings.py
+dev_settings.py
+staging_settings.py
+production_settings.py

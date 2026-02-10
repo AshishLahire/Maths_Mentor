@@ -1,0 +1,27 @@
+streamlit
+pillow
+pytesseract
+easyocr
+openai-whisper
+chromadb
+sentence-transformers
+sympy
+numpy
+python-dotenv
+torch 
+torchvision 
+torchaudio 
+--index-url https://download.pytorch.org/whl/cpu
+opencv-python-headless
+pandas
+groq 
+speechrecognition 
+pyaudio
+pipwin
+pydub
+ffmpeg-python
+streamlit-mic-recorder
+sounddevice 
+soundfile
+
+
