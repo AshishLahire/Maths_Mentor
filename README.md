@@ -2,6 +2,8 @@
 
 An AI-powered math tutoring system that solves problems through multiple input methods (text, image, audio) using a multi-agent architecture.
 
+local working link : http://localhost:8501/
+
 ## ✨ Features
 
 - **Multi-Input Support**: Text, Image (OCR), Audio (Speech-to-Text)
@@ -16,7 +18,7 @@ An AI-powered math tutoring system that solves problems through multiple input m
 
 1. **Clone the repository**:
 ```bash
-git clone https://github.com/neel-ofar/AI_math_mentor.git
+git clone https://github.com/AshishLahire/Maths_Mentor.git
 cd math-mentor-ai
 Install dependencies:
 
