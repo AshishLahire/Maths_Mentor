@@ -1,4 +1,4 @@
-# 🧮 Math Mentor AI - JEE Level Assistant
+# Math Mentor AI - JEE Level Assistant
 
 An AI-powered math tutoring system that solves problems through multiple input methods (text, image, audio) using a multi-agent architecture.
 
