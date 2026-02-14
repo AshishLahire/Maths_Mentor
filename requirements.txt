@@ -2,7 +2,7 @@ streamlit
 pillow
 pytesseract
 easyocr
-openai-whisper
+openai
 chromadb
 sentence-transformers
 sympy
@@ -15,7 +15,6 @@ opencv-python-headless
 pandas
 groq 
 speechrecognition 
-pipwin
 pydub
 ffmpeg-python
 streamlit-mic-recorder
