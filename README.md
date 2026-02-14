@@ -2,7 +2,8 @@
 
 An AI-powered math tutoring system that solves problems through multiple input methods (text, image, audio) using a multi-agent architecture.
 
-local working link : http://localhost:8501/
+local host link : http://localhost:8501/
+deployment link : https://maths-mentor-app.streamlit.app/
 
 ## ✨ Features
 
