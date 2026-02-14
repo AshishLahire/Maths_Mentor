@@ -33,6 +33,7 @@ Run the application:
 
 bash
 streamlit run app.py
+or streamlit run app.py --server.fileWatcherType none
 🔧 Configuration
 Environment Variables (.env)
 env

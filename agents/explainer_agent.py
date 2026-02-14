@@ -57,7 +57,7 @@ CONFIDENCE LEVEL: {confidence:.2%}
 
 Create an explanation that:
 1. Breaks down the solution step-by-step
-2. Uses simple Hindi/English mix
+2. Uses simple English mix
 3. Explains why each step works
 4. Connects to key math concepts
 5. Gives tips for similar problems
