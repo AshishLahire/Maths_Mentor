@@ -17,7 +17,6 @@ local working link : http://localhost:8501/
 ## 🚀 Quick Start
 
 1. **Clone the repository**:
-```bash
 git clone https://github.com/AshishLahire/Maths_Mentor.git
 cd math-mentor-ai
 Install dependencies:
@@ -52,62 +51,67 @@ pip install SpeechRecognition pydub streamlit-mic-recorder
 # Windows specific
 pip install pipwin
 pipwin install pyaudio
-🏗️ Architecture
-text
-┌─────────────────────────────────────────────┐
-│                 User Interface              │
-│  (Text/Image/Audio Input via Streamlit)    │
-└─────────────────┬───────────────────────────┘
-                  │
-┌─────────────────▼───────────────────────────┐
-│              Input Processing               │
-│  • OCR Handler (Image → Text)              │
-│  • Audio Handler (Audio → Text)            │
-└─────────────────┬───────────────────────────┘
-                  │
-┌─────────────────▼───────────────────────────┐
-│             Multi-Agent System              │
-│  ┌─────────┐ ┌─────────┐ ┌─────────┐      │
-│  │ Parser  │ │ Solver  │ │Verifier │      │
-│  │ Agent   │ │ Agent   │ │ Agent   │      │
-│  └─────────┘ └─────────┘ └─────────┘      │
-│         │           │           │          │
-│         └─────────┬─┴─────────┬─┘          │
-│                   ▼           ▼            │
-│             ┌─────────┐ ┌─────────┐       │
-│             │  RAG    │ │Explainer│       │
-│             │ System  │ │ Agent   │       │
-│             └─────────┘ └─────────┘       │
-└─────────────────┬───────────────────────────┘
-                  │
-┌─────────────────▼───────────────────────────┐
-│              Output Display                 │
-│  • Step-by-step Solution                   │
-│  • Confidence Score                        │
-│  • JEE Level Explanation                   │
-│  • Memory Storage                          │
-└─────────────────────────────────────────────┘
-📦 Project Structure
-text
-math-mentor-ai/
-├── app.py                      # Main Streamlit application
-├── .env                        # Environment variables
-├── .gitignore                  # Git ignore file
-├── requirements.txt            # Python dependencies
-├── README.md                   # This file
-├── agents/                     # AI Agents
-│   ├── parser_agent.py        # Parses questions
-│   ├── solver_agent.py        # Solves problems
-│   ├── verifier_agent.py      # Verifies solutions
-│   └── explainer_agent.py     # Creates explanations
-├── utils/                      # Utility modules
-│   ├── ocr_handler.py         # Image to text
-│   └── audio_handler.py       # Audio to text
-├── rag/                        # RAG system
-│   └── retriever.py           # Knowledge retrieval
-└── memory/                     # Memory system
-    └── simple_memory_handler.py
-🤖 Agents Overview
+
+## 🏗️ Architecture
+
+                      text
+    ┌─────────────────────────────────────────────┐
+    │                 User Interface              │
+    │  (Text/Image/Audio Input via Streamlit)     │
+    └─────────────────┬───────────────────────────┘
+                      │
+    ┌─────────────────▼───────────────────────────┐
+    │              Input Processing               │
+    │  • OCR Handler (Image → Text)               │
+    │  • Audio Handler (Audio → Text)             │
+    └─────────────────┬───────────────────────────┘
+                      │
+    ┌─────────────────▼───────────────────────────┐
+    │             Multi-Agent System              │
+    │  ┌─────────┐ ┌─────────┐ ┌─────────┐        │
+    │  │ Parser  │ │ Solver  │ │Verifier │        │
+    │  │ Agent   │ │ Agent   │ │ Agent   │        │
+    │  └─────────┘ └─────────┘ └─────────┘        │
+    │         │           │           │           │
+    │         └─────────┬─┴─────────┬─┘           │
+    │                   ▼           ▼             │
+    │             ┌─────────┐ ┌─────────┐         │
+    │             │  RAG    │ │Explainer│         │
+    │             │ System  │ │ Agent   │         │
+    │             └─────────┘ └─────────┘         │
+    └─────────────────┬───────────────────────────┘
+                      │
+    ┌─────────────────▼───────────────────────────┐
+    │              Output Display                 │
+    │  • Step-by-step Solution                    │
+    │  • Confidence Score                         │
+    │  • JEE Level Explanation                    │
+    │  • Memory Storage                           │
+    └─────────────────────────────────────────────┘
+    
+## 📦 Project Structure
+
+    text
+    math-mentor-ai/
+    ├── app.py                      # Main Streamlit application
+    ├── .env                        # Environment variables
+    ├── .gitignore                  # Git ignore file
+    ├── requirements.txt            # Python dependencies
+    ├── README.md                   # This file
+    ├── agents/                     # AI Agents
+    │   ├── parser_agent.py        # Parses questions
+    │   ├── solver_agent.py        # Solves problems
+    │   ├── verifier_agent.py      # Verifies solutions
+    │   └── explainer_agent.py     # Creates explanations
+    ├── utils/                      # Utility modules
+    │   ├── ocr_handler.py         # Image to text
+    │   └── audio_handler.py       # Audio to text
+    ├── rag/                        # RAG system
+    │   └── retriever.py           # Knowledge retrieval
+    └── memory/                     # Memory system
+        └── simple_memory_handler.py
+    
+## 🤖 Agents Overview
 1. Parser Agent
 Extracts mathematical concepts from questions
 
@@ -136,7 +140,7 @@ Breaks down complex concepts
 
 Provides learning tips
 
-🎤 Audio Features
+## 🎤 Audio Features
 Supported Formats:
 Upload: MP3, WAV, M4A, OGG, WEBM
 
@@ -153,7 +157,7 @@ Minimize background noise
 
 Keep recordings under 30 seconds
 
-🖼️ OCR Features
+## 🖼️ OCR Features
 Supported Image Formats:
 JPG, JPEG, PNG
 
@@ -166,7 +170,7 @@ Avoid glare and shadows
 
 Crop to the problem area
 
-📊 Memory System
+## 📊 Memory System
 Stores problem-solution pairs
 
 Learns from user feedback
@@ -175,14 +179,14 @@ Retrieves similar past problems
 
 Tracks accuracy metrics
 
-🔒 Security Notes
+## 🔒 Security Notes
 API Keys: Never commit .env files to version control
 
 Sensitive Data: All user data is processed locally
 
 Audio/Image Files: Temporary files are deleted after processing
 
-🐛 Troubleshooting
+## 🐛 Troubleshooting
 Common Issues:
 OCR Not Working:
 
@@ -208,7 +212,7 @@ Check internet connection
 
 Confirm API quota not exceeded
 
-🤝 Contributing
+## 🤝 Contributing
 Fork the repository
 
 Create a feature branch
@@ -219,10 +223,10 @@ Test thoroughly
 
 Submit a pull request
 
-📄 License
+## 📄 License
 MIT License - see LICENSE file for details
 
-🙏 Acknowledgements
+## 🙏 Acknowledgements
 Streamlit for the web framework
 
 Groq for LLM API
@@ -231,7 +235,7 @@ SpeechRecognition for audio processing
 
 Tesseract OCR for text extraction
 
-📞 Support
+## 📞 Support
 For issues and questions:
 
 Check the Troubleshooting section
