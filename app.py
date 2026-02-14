@@ -59,7 +59,7 @@ if "confidence_threshold" not in st.session_state:
 
 # ================== SIDEBAR ==================
 with st.sidebar:
-    st.title("🧮 Math Mentor AI")
+    st.title("Math Mentor AI")
 
     st.subheader("Input Method")
     method = st.radio(

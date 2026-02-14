@@ -15,7 +15,6 @@ opencv-python-headless
 pandas
 groq 
 speechrecognition 
-pyaudio
 pipwin
 pydub
 ffmpeg-python
