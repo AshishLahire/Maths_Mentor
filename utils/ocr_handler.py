@@ -39,10 +39,10 @@ class OCRHandler:
                 return "", 0.0
             
             # Windows ke liye tesseract path set karo
-            try:
-                pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
-            except:
-                pass  # Linux/Mac pe default use hoga
+            # try:
+            #     pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+            # except:
+            #     pass  # Linux/Mac pe default use hoga
             
             # Convert PIL Image if needed
             if isinstance(image, Image.Image):

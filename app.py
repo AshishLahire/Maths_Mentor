@@ -10,6 +10,10 @@ import streamlit as st
 from PIL import Image
 import pytesseract
 from dotenv import load_dotenv
+import shutil
+
+st.write("Tesseract path:", shutil.which("tesseract"))
+
 
 # Streamlit + Torch watcher issue fix
 os.environ["STREAMLIT_SERVER_FILEWATCHERTYPE"] = "none"
@@ -17,10 +21,10 @@ os.environ["STREAMLIT_SERVER_FILEWATCHERTYPE"] = "none"
 load_dotenv()
 
 # Tesseract path (Windows)
-try:
-    pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-except:
-    pass
+# try:
+#     pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+# except:
+#     pass
 
 # ================== CUSTOM IMPORTS ==================
 from utils.ocr_handler import extract_text_from_image
